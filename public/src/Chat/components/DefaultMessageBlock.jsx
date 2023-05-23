@@ -108,6 +108,7 @@ function DefaultMessageBlock({ currentChat, socket }) {
       createdAt: date,
     });
     setMessages(msgs);
+    console.log(messages);
   };
 
   // get message from chat live
