@@ -76,7 +76,7 @@ export default function Login() {
           <input
             type="password"
             placeholder="Password"
-            name="password"
+            name="password" 
             onChange={(e) => handleChange(e)}
           />
           <button type="submit">Log In</button>

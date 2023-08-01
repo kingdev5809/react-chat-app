@@ -15,10 +15,13 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://kingdev5809:Izw8A08kj2IPVW3F@cluster0.nbpbiu3.mongodb.net/chat",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("DB Connetion Successfull");
   })
@@ -34,7 +37,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3001",
+    origin: "http://localhost:3000",
     credentials: true,
   },
 });
