@@ -22,7 +22,7 @@ module.exports.getMessages = async (req, res, next) => {
   } catch (ex) {
     next(ex);
   }
-};
+}
 
 module.exports.addMessage = async (req, res, next) => {
   try {
@@ -39,4 +39,4 @@ module.exports.addMessage = async (req, res, next) => {
   } catch (ex) {
     next(ex);
   }
-};
+}
